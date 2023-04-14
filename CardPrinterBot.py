@@ -31,8 +31,10 @@ def write_string_on_image(text, font_path=None, image_size=(400, 200), bg_color=
     font = ImageFont.truetype("arial.ttf", font_size)
 
     # Get the size of the text
-    text_width, text_height = draw.textsize(text, font=font)
-    
+    text_size = draw.textbbox((0, 0), text, font=font)
+    text_width = text_size[2]
+    text_height = text_size[3]
+
     # Calculate the position to center the text on the image
     x = (image_size[0] - text_width) // 2
     y = (image_size[1] - text_height) // 2
