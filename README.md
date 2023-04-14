@@ -9,7 +9,12 @@ Made to run on a Rasberry PI 4
 Run the following:
 * pip install pyserial
 * pip install Pillow
-* pip install pycups
+
+# Rasberry PI
+
+
+# Rasberry PI info (not working)
+* pip install pycups --use-pep517
 
 Ensure I2C is enabled on the Rasberry PI
 * Run sudo raspi-config
@@ -18,18 +23,22 @@ Ensure I2C is enabled on the Rasberry PI
 * Choose "Yes" for "Would you like the serial port hardware to be enabled?"
 * Exit the configuration tool and reboot your Raspberry Pi
 
-# Printer
-* Set the card printer to be the default printer
+Rasberry PI pinout
+* VCC PIN 2
+* Ground PIN 6
+* Tx PIN 10
+* Card printer connected to USB
 
-# Running
+Printer
+* Set the card printer to be the default printer
+  * PI > Preferences > Print Settings > Add > ZEBRA CARD
+  * Choose Zebra driver (you have to scroll down)
+  * EPL1 Label
+
+Running
 * Copy CardPrinterBot.py and arial.ttf into the home directory on the Rasberry PI 4
 * Ensure CardPrinterBot.py is run on startup
   * Edit /home/<user>/.bashrc
   * Go to the last line of the script and add:
     * echo Running CardPrinterBot at boot
     * python /home/pi/CardPrinterBot.py
-
-# Rasberry PI pinout
-* VCC PIN 2
-* Ground PIN 6
-* Tx PIN 10
