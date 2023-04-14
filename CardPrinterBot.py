@@ -49,7 +49,7 @@ def write_string_on_image(text, font_path=None, image_size=(400, 200), bg_color=
 
 def print_image(image_path):
     os.startfile(image_path, "print")
-    print(f"Image sent to the printer with job ID {job_id}")
+    print(f"Image sent to the printer")
 
 def main():
     # test printing
