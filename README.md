@@ -2,6 +2,8 @@
 
 Prints the RFID tag onto the card to make signing up to HSBNE easier. Made mostly by ChatGPT 4.
 
+Card printer is a Zebra P330i https://www.zebra.com/ap/en/support-downloads/printers/card/p330i.html
+
 # Setup
 Made to run on a Rasberry PI 4
 * Install Python
