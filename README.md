@@ -5,7 +5,12 @@ Prints the RFID tag onto the card to make signing up to HSBNE easier. Made mostl
 Card printer is a Zebra P330i https://www.zebra.com/ap/en/support-downloads/printers/card/p330i.html
 
 # Setup
-Made to run on a Rasberry PI 4
+Made to run on a Windows PC
+
+Install Driver for Zebra P330i
+* Restarted machine after installing driver (installer didn't ask to)
+* Still wouldn't print, then Windows installed something for the printer 
+
 * Install Python
 
 Run the following:
@@ -15,7 +20,7 @@ Run the following:
 # Rasberry PI
 
 
-# Rasberry PI info (not working)
+# Rasberry PI info (not working - printer can be installed via CUPS, but printer didn't respond)
 * pip install pycups --use-pep517
 
 Ensure I2C is enabled on the Rasberry PI
